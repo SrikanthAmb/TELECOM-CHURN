@@ -1,0 +1,12 @@
+max_rech_data_8'--------------------maximum data recharge in 8th month
+'total_rech_data_6'------------------ total data recharge in the 6th month
+'cat_loc_ic_t2t_7_Medium'----------- 2/3rd of Local incoming calls within T-network in 7th month
+'cat_loc_og_t2t_7_Medium'-----------2/3rd of Local outgoing calls within T-network in 7th month
+'cat_loc_ic_t2t_6_Medium'------------2/3rd of Local incoming calls within T-network in 6th month
+'cat_loc_og_t2m_7_Medium'------------2/3rd of Local incoming calls from T-network to other network in 7th month
+'cat_loc_ic_t2m_6_Medium'------------2/3rd of Local incoming calls from T-network to other network in 6th month
+'cat_loc_ic_t2t_8_Medium'--------------2/3rd of Local incoming calls from T-network to other network in 8th month
+'cat_loc_og_t2t_8_Medium'------------2/3rd of Local outgoing calls within T-network in 8th month
+'cat_loc_og_t2t_6_Medium'---------- 2/3rd of Local outgoing calls within T-network in 6th month
+'cat_total_og_6_Medium' ---------------2/3rd of total Local outgoing calls in 6th month
+'total_rech_num_6'---------------- Total recharge number in the 6th month

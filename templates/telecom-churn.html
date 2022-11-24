@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="UTF-8">
+  
+    
+  		<title>T telecom Company</title>
+			<style>
+				#example {
+   			 		border: 2px solid black;
+  			 		padding: 25px;
+    			 		background-repeat: no-repeat;
+			 		background-size: auto;
+			 		background-image:url("https://www.atrebo.com/wp-content/uploads/2022/03/five-5-trends-in-telecom-sector-for-2022.jpg");
+					}
+			</style>
+	
+	</head>
+ 
+<body>
+
+      <!-- Show Bank banner-->
+     
+  
+    <div id="example" style="color:blue">
+	 <img src="./static/images/5G.jpg" alt="telecom" style="width:100%;height:100%"> 
+	
+        <form action="{{ url_for('predict')}}" method="post">
+            
+	    <h2>Telecom Churn</h2>
+
+		
+
+            <h3>Maximum data recharge in 8th month</h3><input id="first" name="max_rech_data_8" type="number"><br>
+            
+	    <h3>Total data recharge in the 6th month</h3><input id="second" name="total_rech_data_6" type="number"><br>
+            
+	    <h3>2/3rd of Local incoming calls within T-network in 7th month</h3><select name="cat_loc_ic_t2t_7_Medium" id="third" type="number" required="required"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+            
+	    <h3>2/3rd of Local outgoing calls within T-network in 7th month</h3><select name="cat_loc_og_t2t_7_Medium" id="fourth" type="number" required="required"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+
+            <h3>2/3rd of Local incoming calls within T-network in 6th month </h3><select name="cat_loc_ic_t2t_6_Medium" id="fifth" type="number" required="required"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+
+            <h3>2/3rd of Local outgoing calls from T-network to other network in 7th month </h3><select name="cat_loc_og_t2m_7_Medium" id="sixth" type="number" required="required"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+
+            <h3>2/3rd of Local incoming calls from T-network to other network in 6th month </h3><select name="cat_loc_ic_t2m_6_Medium" id="seventh" type="number" required="required"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+
+            <h3>2/3rd of Local incoming calls from T-network to other network in 8th month </h3><select name="cat_loc_ic_t2t_8_Medium" id="eigth" type="number"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+
+       	   <h3>2/3rd of Local outgoing calls within T-network in 8th month </h3><select name="cat_loc_og_t2t_8_Medium" id="ninth" type="number"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+
+	    <h3>2/3rd of Local outgoing calls within T-network in 6th month </h3><select name="cat_loc_og_t2t_6_Medium" id="tenth" type="number"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+	    <h3>2/3rd of total Local outgoing calls in 6th month </h3><select name="cat_total_og_6_Medium" id="eleventh" type="number"><br>
+			<option value=0> No </option>
+                	<option value=1> Yes </option>
+		</select>
+	 
+	    <h3>Total number recharge in the 6th month</h3><input id="twelth" name="total_rech_num_6" type="number"><br>
+
+                          
+                          
+            
+            <br><br><button id="sub" type="submit "> Will Customer Churn ? </button>
+            <br>
+
+        </form>
+
+         
+       <!-- Show predicted output using ML model --> 
+       <div>
+           <center>
+               <h1>{{ prediction_text }}</h1>
+           </center>
+       </div>
+
+     </div>
+
+</body>
+</html>
